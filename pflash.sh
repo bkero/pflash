@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export ADB="${ADB:-/home/bkero/bin/adb}"
-export FASTBOOT="${FASTBOOT:-/home/bkero/bin/fastboot}"
+export ADB="${ADB:$(which adb)}"
+export FASTBOOT="${FASTBOOT:$(which fastboot)}"
 
 $ADB kill-server
 
