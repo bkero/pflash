@@ -10,11 +10,11 @@ Currently the only support is for FirefoxOS Flame devices. You'll need a copy of
  $ mv $HOME/v18D_nightly_v2 pflash/
  $ cd pflash
  $ ./pflash.sh
- ~~~
+~~~
  
  The script will attempt to find phones and prompt you to rescan or accept the list and proceed.
  
- # Cautions
+# Cautions
  
  On Flame devices the screen will timeout and turn off rather quickly. When this happens ADB will be unavailable, hence the script will not flash these devices. To correct this it is recommended to set the screen timeout to 10 minutes, or off completely.
  
