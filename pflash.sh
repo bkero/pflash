@@ -15,14 +15,17 @@ get_devices() {
 
 echo "To prepare for the flash, you'll want to plug in all your devices, turn Remote
 Debugging on, and set the Screen Timeout to 0."
+
+echo
+echo "Please wait, fetching devices..."
+echo
+get_devices
+
 echo
 echo "Keys:
     (s) Scan for devices. Print the list of found devices.
     (y) Proceed to flash
     (q) Quit"
-
-echo
-get_devices
 
 while read -e -n 1 -s answer; do
     if [[ $answer = [Yy] ]]; then
